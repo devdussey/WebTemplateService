@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for theming */
+:root {
+  /* Light theme colors */
+  --color-primary: 34 197 94; /* green-500 */
+  --color-primary-dark: 22 163 74; /* green-600 */
+  --color-primary-light: 74 222 128; /* green-400 */
+  
+  --color-background: 255 255 255; /* white */
+  --color-background-secondary: 249 250 251; /* gray-50 */
+  --color-background-tertiary: 243 244 246; /* gray-100 */
+  
+  --color-text-primary: 17 24 39; /* gray-900 */
+  --color-text-secondary: 75 85 99; /* gray-600 */
+  --color-text-tertiary: 156 163 175; /* gray-400 */
+  
+  --color-border: 229 231 235; /* gray-200 */
+  --color-border-light: 243 244 246; /* gray-100 */
+  
+  --color-card: 255 255 255; /* white */
+  --color-card-hover: 249 250 251; /* gray-50 */
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Dark theme colors */
+.dark {
+  --color-primary: 34 197 94; /* green-500 */
+  --color-primary-dark: 22 163 74; /* green-600 */
+  --color-primary-light: 74 222 128; /* green-400 */
+  
+  --color-background: 17 24 39; /* gray-900 */
+  --color-background-secondary: 31 41 55; /* gray-800 */
+  --color-background-tertiary: 55 65 81; /* gray-700 */
+  
+  --color-text-primary: 249 250 251; /* gray-50 */
+  --color-text-secondary: 209 213 219; /* gray-300 */
+  --color-text-tertiary: 156 163 175; /* gray-400 */
+  
+  --color-border: 75 85 99; /* gray-600 */
+  --color-border-light: 55 65 81; /* gray-700 */
+  
+  --color-card: 31 41 55; /* gray-800 */
+  --color-card-hover: 55 65 81; /* gray-700 */
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Custom utility classes using CSS variables */
+@layer utilities {
+  .bg-theme {
+    background-color: rgb(var(--color-background));
+  }
+  
+  .bg-theme-secondary {
+    background-color: rgb(var(--color-background-secondary));
+  }
+  
+  .bg-theme-tertiary {
+    background-color: rgb(var(--color-background-tertiary));
+  }
+  
+  .bg-card {
+    background-color: rgb(var(--color-card));
+  }
+  
+  .bg-card-hover:hover {
+    background-color: rgb(var(--color-card-hover));
+  }
+  
+  .text-theme-primary {
+    color: rgb(var(--color-text-primary));
+  }
+  
+  .text-theme-secondary {
+    color: rgb(var(--color-text-secondary));
+  }
+  
+  .text-theme-tertiary {
+    color: rgb(var(--color-text-tertiary));
+  }
+  
+  .border-theme {
+    border-color: rgb(var(--color-border));
+  }
+  
+  .border-theme-light {
+    border-color: rgb(var(--color-border-light));
+  }
+  
+  .shadow-theme-sm {
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .shadow-theme-md {
+    box-shadow: var(--shadow-md);
+  }
+  
+  .shadow-theme-lg {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .shadow-theme-xl {
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+/* Ensure proper contrast for form elements */
+input, textarea, select {
+  @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600;
+}
+
+input:focus, textarea:focus, select:focus {
+  @apply ring-green-500 dark:ring-green-400 border-green-500 dark:border-green-400;
+}
+
+/* Ensure buttons have proper contrast */
+button:not(.bg-green-600):not(.bg-white):not(.bg-gray-50) {
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600;
+}
+
+button:not(.bg-green-600):not(.bg-white):not(.bg-gray-50):hover {
+  @apply bg-gray-200 dark:bg-gray-700;
+}
