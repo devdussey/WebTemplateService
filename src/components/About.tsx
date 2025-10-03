@@ -5,23 +5,23 @@ const About: React.FC = () => {
   const features = [
     {
       icon: Users,
-      title: 'Expert Team',
-      description: 'Showcase the certifications, experience, and friendly faces that set your crew apart.'
+      title: 'Experienced Team',
+      description: 'Our skilled crew brings years of lawn care and landscaping expertise to every project.'
     },
     {
       icon: Award,
-      title: 'Quality Guaranteed',
-      description: 'Describe the standards, warranties, and promises that help clients feel confident.'
+      title: 'Quality Work',
+      description: 'We use professional-grade equipment and proven techniques for superior results.'
     },
     {
       icon: Shield,
       title: 'Fully Insured',
-      description: 'Highlight licensing, insurance, or safety training to reassure prospective customers.'
+      description: 'Licensed and insured for your peace of mind and property protection.'
     },
     {
       icon: Clock,
       title: 'Reliable Service',
-      description: 'Share your commitment to punctuality, proactive communication, and consistent care.'
+      description: 'Punctual, professional, and committed to completing every job right.'
     }
   ];
 
@@ -32,21 +32,19 @@ const About: React.FC = () => {
           {/* Content */}
           <div>
             <div className="inline-block bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              About Your Company
+              About Gawel's Grass
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              Build Trust With a Compelling Story
+              Your Trusted Partner in Lawn Care & Landscaping
             </h2>
 
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Introduce your brand, values, and mission in a way that speaks directly to your ideal clients.
-              Use this space to communicate why your team loves caring for outdoor spaces and how you deliver results.
+              At Gawel's Grass, we take pride in transforming outdoor spaces into beautiful, well-maintained landscapes. Our team is dedicated to providing reliable, professional service that exceeds expectations.
             </p>
 
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Share a brief history, notable achievements, or your approach to craftsmanship and customer service.
-              Make it easy for visitors to picture themselves working with you and experiencing your signature touch.
+              From routine lawn maintenance to complex landscape projects, we bring expertise, quality equipment, and attention to detail to every job. We're committed to making your property look its best year-round.
             </p>
 
             {/* Features Grid */}

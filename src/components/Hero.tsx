@@ -27,14 +27,12 @@ const Hero: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            <span className="block text-green-200">Your Company</span>
-            Outdoor Services That Impress
+            <span className="block text-green-200">Gawel's Grass</span>
+            Professional Lawn Care & Landscaping
           </h1>
 
           <p className="text-xl md:text-2xl text-emerald-50/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Showcase your lawn care, landscaping, or exterior maintenance services with a customizable
-            template built to convert curious visitors into loyal customers. Highlight your expertise,
-            outline your offers, and make it effortless to request a quote.
+            Expert yard care and landscaping services for residential and commercial properties. From seasonal lawn maintenance to complete landscape transformations, we deliver quality results year-round.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -62,16 +60,16 @@ const Hero: React.FC = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">24/7</div>
-              <div className="text-green-100/90">Lead Capture Ready</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">Year-Round</div>
+              <div className="text-green-100/90">Service Available</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">6</div>
-              <div className="text-green-100/90">Service Layouts</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">5+</div>
+              <div className="text-green-100/90">Service Categories</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">100%</div>
-              <div className="text-green-100/90">Brand Customizable</div>
+              <div className="text-green-100/90">Satisfaction Focused</div>
             </div>
           </div>
         </div>

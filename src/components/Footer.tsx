@@ -6,12 +6,12 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const services = [
-    'Lawn Maintenance',
-    'Fertilization Programs',
-    'Tree & Shrub Care',
-    'Landscape Design',
-    'Irrigation Systems',
-    'Seasonal Cleanup'
+    'Seasonal Lawn Care',
+    'Snow Removal',
+    'Skidsteer Services',
+    'Tree Services',
+    'Landscape Projects',
+    'Material Removal'
   ];
 
   const quickLinks = [
@@ -45,17 +45,16 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-2">
               <img
                 src="/logo.svg"
-                alt="Your Company Logo"
+                alt="Gawel's Grass Logo"
                 className="h-10 w-10 rounded-lg"
               />
               <div>
-                <span className="text-xl font-bold">Your Company</span>
-                <p className="text-xs text-gray-400">Services Template</p>
+                <span className="text-xl font-bold">Gawel's Grass</span>
+                <p className="text-xs text-gray-400">Lawn Care & Landscaping</p>
               </div>
             </div>
             <p className="text-gray-300 dark:text-gray-400 text-sm leading-relaxed">
-              Use this space to share a concise elevator pitch about Your Company. Highlight your
-              specialties, service area, and the promise you deliver to every customer.
+              Professional lawn care and landscaping services for residential and commercial properties. Quality work, reliable service, and complete customer satisfaction.
             </p>
 
             {/* Contact Info */}
@@ -180,11 +179,11 @@ const Footer: React.FC = () => {
           <div className="border-t border-gray-800 dark:border-gray-700 mt-12 pt-8">
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
               <div className="text-sm text-gray-400 dark:text-gray-500">
-                © {currentYear} Your Company. All rights reserved.
+                © {currentYear} Gawel's Grass. All rights reserved.
               </div>
 
               <div className="flex items-center space-x-6 text-sm text-gray-400 dark:text-gray-500">
-                <span>20+ Years Experience</span>
+                <span>Professional Service You Can Trust</span>
               </div>
             </div>
 

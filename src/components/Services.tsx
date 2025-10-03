@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scissors, Sprout, TreePine, Droplets, Shovel, Palette, Truck, Cake as Rake } from 'lucide-react';
+import { Scissors, Sprout, TreePine, Snowflake, Truck as TruckIcon, Hammer } from 'lucide-react';
 
 const Services: React.FC = () => {
   const scrollToQuote = () => {
@@ -12,56 +12,56 @@ const Services: React.FC = () => {
   const services = [
     {
       icon: Scissors,
-      title: 'Lawn Maintenance',
-      description: 'Professional mowing, edging, and trimming to keep your lawn looking pristine.',
+      title: 'Seasonal Lawn Care',
+      description: 'Complete lawn maintenance including mowing, edging, trimming, and seasonal treatments.',
       price: 'Starting at $40/hour',
-      features: ['Hedge trimming', 'Garden & weed tending', 'Power rake services', 'Seasonal scheduling']
+      features: ['Professional mowing & edging', 'Hedge trimming', 'Garden & weed tending', 'Power rake & aeration']
     },
     {
-      icon: Rake,
-      title: 'Aeration Services',
-      description: 'Improve your lawn\'s health with professional aeration services.',
-      price: 'Front yard: $50-90 | Full yard: $90-160',
-      features: ['Front yard only options', 'Front & back yard service', 'Large yard coverage', 'Seasonal timing']
+      icon: Snowflake,
+      title: 'Snow Removal',
+      description: 'Reliable winter snow removal services to keep your property safe and accessible.',
+      price: 'Contact for quote',
+      features: ['Residential driveways', 'Commercial lots', 'Sidewalk clearing', 'Emergency service available']
     },
     {
-      icon: Truck,
-      title: 'Power Rake & Cleanup',
-      description: 'Remove thatch buildup and debris for healthier grass growth.',
-      price: 'Small-Average: $90-170 | Large: $250',
-      features: ['Front yard only service', 'Complete yard coverage', 'Large property options', 'Spring preparation']
+      icon: TruckIcon,
+      title: 'Skidsteer Services',
+      description: 'Professional skidsteer operations for grading, material moving, and site preparation.',
+      price: '$120/hour',
+      features: ['Site grading', 'Material transport', 'Land leveling', 'Excavation work']
     },
     {
-      icon: Shovel,
-      title: 'Landscaping Services',
-      description: 'Complete landscape services including skidsteer work and material handling.',
-      price: 'Skidsteer: $120/hour | Material removal: $100/hour',
-      features: ['Skidsteer operations', 'Material removal & dump truck', 'Site preparation', 'Custom projects']
+      icon: TreePine,
+      title: 'Tree Services',
+      description: 'Expert tree care including trimming, removal, and stump grinding services.',
+      price: 'Contact for quote',
+      features: ['Tree trimming & pruning', 'Tree removal', 'Stump grinding', 'Emergency storm cleanup']
     },
     {
       icon: Sprout,
-      title: 'Garden & Plant Care',
-      description: 'Rototilling and garden preparation services for healthy plant growth.',
-      price: 'Small garden: $50 | Large garden: $80-100',
-      features: ['Existing garden rototilling', 'New garden preparation', 'Soil conditioning', 'Planting bed setup']
+      title: 'Landscape Projects',
+      description: 'Custom landscaping design and installation for beautiful outdoor spaces.',
+      price: 'Contact for quote',
+      features: ['Landscape design', 'Garden installation', 'Rototilling services', 'Hardscape features']
     },
     {
-      icon: Palette,
-      title: 'Specialized Services',
-      description: 'Fertilizing, weed spraying, and lot power sweeping services.',
-      price: 'Contact for quote',
-      features: ['Fertilizing programs', 'Weed spraying', 'Lot power sweeping', 'Custom treatment plans']
+      icon: Hammer,
+      title: 'Additional Services',
+      description: 'Specialized services including material removal, fertilizing, and power sweeping.',
+      price: 'Material removal: $100/hour',
+      features: ['Dump truck services', 'Fertilizing programs', 'Weed control', 'Lot power sweeping']
     }
   ];
 
   const seasonalNote = {
-    title: 'Seasonal Services Kick-Off',
-    description: 'Adjust this note to reflect when your crews resume full service each year and how clients can reserve their spot.'
+    title: 'Spring Services Starting Soon',
+    description: 'Book your seasonal lawn care services early to secure your preferred schedule. Power rake, aeration, and lawn maintenance slots fill up quickly!'
   };
 
   const snowRemovalNote = {
-    title: 'Need Off-Season Support?',
-    description: 'Share winter offerings, snow removal routes, or alternative services available during the colder months.'
+    title: 'Winter Snow Removal Available',
+    description: 'Don\'t let snow and ice slow you down. Contact us for reliable snow removal services throughout the winter months.'
   };
 
   return (
@@ -73,11 +73,10 @@ const Services: React.FC = () => {
             Our Services
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Professional Services Built for Your Company
+            Comprehensive Yard Care & Landscaping Services
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Mix and match the offerings that make sense for your business. Update pricing, features, and descriptions
-            to reflect the expertise that keeps your customers coming back season after season.
+            From weekly lawn maintenance to major landscape projects, Gawel's Grass provides professional services year-round. Quality work and customer satisfaction are our top priorities.
           </p>
         </div>
 
@@ -231,8 +230,7 @@ const Services: React.FC = () => {
               Need a Custom Solution?
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Every property is unique. Invite visitors to describe their project so Your Company can craft
-              tailored packages, seasonal plans, or one-time services that match their goals and budget.
+              Every property is unique. Let us know about your project and we'll create a customized plan that fits your needs and budget. From one-time jobs to seasonal packages, we've got you covered.
             </p>
             <button
               onClick={scrollToQuote}

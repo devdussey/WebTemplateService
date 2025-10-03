@@ -35,12 +35,12 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('home')}>
             <img
               src="/logo.svg"
-              alt="Your Company Logo"
+              alt="Gawel's Grass Logo"
               className="h-12 w-12 rounded-lg"
             />
             <div>
-              <span className="text-xl font-bold text-green-500 dark:text-green-400">Your Company</span>
-              <p className="text-xs text-gray-600 dark:text-gray-400">Services Template</p>
+              <span className="text-xl font-bold text-green-500 dark:text-green-400">Gawel's Grass</span>
+              <p className="text-xs text-gray-600 dark:text-gray-400">Lawn Care & Landscaping</p>
             </div>
           </div>
 
@@ -53,7 +53,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
-              <span className="text-xl font-bold text-green-600 dark:text-green-400">Your Company</span>
+              <span className="text-xl font-bold text-green-600 dark:text-green-400">Gawel's Grass</span>
             </div>
 
             {/* Desktop Navigation */}
